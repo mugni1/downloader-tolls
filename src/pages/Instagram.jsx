@@ -78,7 +78,7 @@ export default function Instagram() {
         )}
       </Container2>
 
-      <Tutorial name="TikTok" bg="bg-purple-600" text="text-purple-600" />
+      <Tutorial name="Instagram" bg="bg-purple-600" text="text-purple-600" />
 
       <Footer />
     </>
