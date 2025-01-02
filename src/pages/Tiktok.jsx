@@ -56,11 +56,13 @@ export default function TikTok() {
         {Object.keys(dataLink).length != 0 ? (
           <div className=" container mx-auto px-5 mt-10">
             <div className="w-full p-5 bg-white shadow-md">
-              <img
-                src={dataLink.data.thumbnail}
-                alt="thumbnail"
-                className="w-full"
-              />
+              <div className="bg-black w-full border border-slate-600">
+                <img
+                  src={dataLink.data.thumbnail}
+                  alt="thumbnail"
+                  className="w-5/12 mx-auto"
+                />
+              </div>
               <h1>{dataLink.data.title}</h1>
               <h1 className="font-semibold">
                 Creator : {dataLink.data.creator}

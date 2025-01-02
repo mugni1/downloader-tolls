@@ -22,6 +22,7 @@ export default function Instagram() {
       url: "https://api.febrita.biz.id/downloader/instagram?url=" + link,
     })
       .then((response) => {
+        console.log(response.data);
         setDataLink(response.data);
       })
       .catch((error) => {
@@ -56,26 +57,17 @@ export default function Instagram() {
         {Object.keys(dataLink).length != 0 ? (
           <div className=" container mx-auto px-5 mt-10">
             <div className="w-full p-5 bg-white shadow-md">
-              <img
-                src={dataLink.data.thumbnail}
-                alt="thumbnail"
-                className="w-full"
-              />
-              <h1>{dataLink.data.title}</h1>
-              <h1 className="font-semibold">
-                Creator : {dataLink.data.creator}
-              </h1>
-              {dataLink.data.video[0] != null && (
-                <a href={dataLink.data.video[0]} target="_blank">
+              <div className="bg-black w-full border border-slate-600">
+                <img
+                  src={dataLink.data[0].thumbnail}
+                  alt="thumbnail"
+                  className="w-5/12 mx-auto"
+                />
+              </div>
+              {dataLink.data[0].url != null && (
+                <a href={dataLink.data[0].url} target="_blank">
                   <Btn className="bg-emerald-600 hover:bg-emerald-800 ring-emerald-500 w-full">
                     Download Mp4
-                  </Btn>
-                </a>
-              )}
-              {dataLink.data.audio[0] != null && (
-                <a href={dataLink.data.audio[0]} target="_blank">
-                  <Btn className="bg-emerald-600 hover:bg-emerald-800 ring-emerald-500 w-full">
-                    Download Mp3
                   </Btn>
                 </a>
               )}
