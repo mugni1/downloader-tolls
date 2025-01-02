@@ -33,7 +33,7 @@ export default function Home() {
             <div>
               <h1 className="flex items-center gap-2">
                 <img
-                  src="/src/assets/brand-tiktok-sq-svgrepo-com.png"
+                  src="/brand-tiktok-sq-svgrepo-com.png"
                   className="h-5 w-5"
                   alt=""
                 />

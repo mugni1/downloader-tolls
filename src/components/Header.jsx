@@ -10,11 +10,7 @@ export function Header({ className }) {
       className={`w-full flex px-5 py-2 shadow-md sticky top-0 ${className} `}
     >
       <Link to="/">
-        <img
-          src="/src/assets/left-arrow-alt-svgrepo-com.png"
-          alt=""
-          className="h-8 w-8"
-        />
+        <img src="/left-arrow-alt-svgrepo-com.png" alt="" className="h-8 w-8" />
       </Link>
     </section>
   );
