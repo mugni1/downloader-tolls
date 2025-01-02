@@ -20,7 +20,7 @@ export default function Home() {
             <div>
               <p className="flex items-center gap-2">
                 <img
-                  src="/src/assets/youtube-168-svgrepo-com.svg"
+                  src="/src/assets/youtube-player-multimedia-video-communication-interaction-svgrepo-com.png"
                   className="h-5 w-5"
                   alt=""
                 />
@@ -33,7 +33,7 @@ export default function Home() {
             <div>
               <h1 className="flex items-center gap-2">
                 <img
-                  src="/src/assets/tiktok-svgrepo-com.svg"
+                  src="/src/assets/brand-tiktok-sq-svgrepo-com.png"
                   className="h-5 w-5"
                   alt=""
                 />
@@ -48,7 +48,7 @@ export default function Home() {
             <div>
               <h1 className="flex items-center gap-2">
                 <img
-                  src="/src/assets/instagram-1-svgrepo-com.svg"
+                  src="/src/assets/instagram-1-svgrepo-com.png"
                   className="h-5 w-5"
                   alt=""
                 />

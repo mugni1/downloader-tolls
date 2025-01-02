@@ -11,7 +11,7 @@ export function Header({ className }) {
     >
       <Link to="/">
         <img
-          src="/src/assets/left-arrow-alt-svgrepo-com.svg"
+          src="/src/assets/left-arrow-alt-svgrepo-com.png"
           alt=""
           className="h-8 w-8"
         />
