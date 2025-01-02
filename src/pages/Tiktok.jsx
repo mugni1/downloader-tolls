@@ -39,7 +39,7 @@ export default function TikTok() {
     <>
       <Header className="bg-slate-600" />
       <Container2 className="bg-gradient-to-br from-sky-600 via-slate-600 to-red-600">
-        <Title className="py-10">Download Video TikTok</Title>
+        <Title className="py-10 text-white">Download Video TikTok</Title>
         <form onSubmit={download} className="container mx-auto px-5">
           <input
             className="w-full p-1 outline-none mb-2"

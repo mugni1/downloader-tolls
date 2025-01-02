@@ -6,7 +6,7 @@ Title.propTypes = {
 };
 export function Title({ children, className }) {
   return (
-    <h1 className={`font-bold text-center text-white text-2xl ${className}`}>
+    <h1 className={`font-bold text-center  text-2xl ${className}`}>
       {children}
     </h1>
   );

@@ -41,7 +41,7 @@ export default function Youtube() {
     <>
       <Header className="bg-red-600" />
       <Container2 className="bg-red-600">
-        <Title className="py-10">Download Video Youtube</Title>
+        <Title className="py-10 text-white">Download Video Youtube</Title>
         <form onSubmit={download} className="container mx-auto px-5">
           <input
             className="w-full p-1 outline-none mb-2"
