@@ -24,7 +24,6 @@ export default function Youtube() {
       url: "https://api.febrita.biz.id/downloader/youtube?url=" + link,
     })
       .then((response) => {
-        console.log(response.data);
         setDataLink(response.data);
       })
       .catch((error) => {

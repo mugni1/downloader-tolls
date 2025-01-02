@@ -54,9 +54,11 @@ export default function Home() {
                 />
                 <span>Instagram</span>
               </h1>
-              <Btn className="bg-gradient-to-br from-indigo-600 to-pink-600 ring-purple-800">
-                Get Started
-              </Btn>
+              <Link to="instagram">
+                <Btn className="bg-gradient-to-br from-indigo-600 to-pink-600 ring-purple-800">
+                  Get Started
+                </Btn>
+              </Link>
             </div>
           </section>
         </div>

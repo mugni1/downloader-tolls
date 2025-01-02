@@ -9,7 +9,7 @@ import { Decription } from "../components/Decription";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
-export default function TikTok() {
+export default function Instagram() {
   const [link, setLink] = useState(null);
   const [loading, setLoading] = useState(false);
   const [dataLink, setDataLink] = useState({});
@@ -19,7 +19,7 @@ export default function TikTok() {
     setLoading(true);
     axios({
       method: "GET",
-      url: "https://api.febrita.biz.id/downloader/tiktok?url=" + link,
+      url: "https://api.febrita.biz.id/downloader/instagram?url=" + link,
     })
       .then((response) => {
         setDataLink(response.data);
@@ -37,9 +37,9 @@ export default function TikTok() {
 
   return (
     <>
-      <Header className="bg-slate-600" />
-      <Container2 className="bg-gradient-to-br from-sky-600 via-slate-600 to-red-600">
-        <Title className="py-10">Download Video TikTok</Title>
+      <Header className="bg-purple-600" />
+      <Container2 className="bg-gradient-to-br from-indigo-700 to-pink-600">
+        <Title className="py-10">Download Video Instagram</Title>
         <form onSubmit={download} className="container mx-auto px-5">
           <input
             className="w-full p-1 outline-none mb-2"
@@ -86,7 +86,7 @@ export default function TikTok() {
         )}
       </Container2>
 
-      <Tutorial name="TikTok" bg="bg-slate-600" text="text-slate-600" />
+      <Tutorial name="TikTok" bg="bg-purple-600" text="text-purple-600" />
 
       <Footer />
     </>
