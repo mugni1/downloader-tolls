@@ -9,6 +9,7 @@ import { Decription } from "../components/Decription";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { LoadingButton } from "../components/Loading";
+import { Input } from "../components/Input";
 
 export default function Youtube() {
   const [link, setLink] = useState(null);
@@ -28,9 +29,11 @@ export default function Youtube() {
         setDataLink(response.data);
       })
       .catch((error) => {
+        console.log(error);
         swal({
           icon: "error",
           title: "Download Failed",
+          text: "Please Check link or your connections",
         });
       })
       .finally(() => {
@@ -44,12 +47,10 @@ export default function Youtube() {
       <Container2 className="bg-red-600">
         <Title className="py-10 text-white">Download Video Youtube</Title>
         <form onSubmit={download} className="container mx-auto px-5">
-          <input
-            className="w-full p-1 outline-none mb-2"
-            type="text"
-            placeholder="Tempel Link disini"
-            onChange={(e) => setLink(e.target.value)}
-            required
+          <Input
+            className="outline-red-600"
+            value={link}
+            setValue={(e) => setLink(e.target.value)}
           />
           <Btn className="bg-emerald-600 ring-emerald-500">
             {loading ? <LoadingButton /> : "Download"}
