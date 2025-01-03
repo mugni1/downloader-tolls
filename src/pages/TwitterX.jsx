@@ -84,7 +84,7 @@ export default function TwitterX() {
         {/* end Data Video and audio and decription  */}
       </Container2>
 
-      <Tutorial name="TikTok" bg="bg-slate-600" text="text-slate-600" />
+      <Tutorial name="Twitter / X" bg="bg-slate-600" text="text-slate-600" />
 
       <Footer />
     </>
