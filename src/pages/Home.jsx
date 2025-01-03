@@ -14,10 +14,10 @@ export default function Home() {
           <Title className="text-slate-800">Selamat Datang</Title>
           <p className="text-center text-slate-800">
             Kami menawarkan layanan gratis untuk <b>UNDUH</b> video atau sound
-            <b> YouTube,</b> <b>TikTok,</b> <b>Instagram,</b> tanpa{" "}
-            <b>watermark</b>. Dapatkan video dengan resolusi HD dalam format
-            MP4, dan dapatkan juga music yang jernih dalam format MP3 (jika
-            tersedia).
+            <b> YouTube,</b> <b>TikTok,</b> <b>Instagram</b> dan <b>Twitter</b>{" "}
+            tanpa <b>watermark</b>. Dapatkan video dengan resolusi HD dalam
+            format MP4, dan dapatkan juga music yang jernih dalam format MP3
+            (jika tersedia).
           </p>
 
           {/* Pilih sosmed  */}
