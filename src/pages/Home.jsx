@@ -60,6 +60,10 @@ export default function Home() {
                 </Btn>
               </Link>
             </div>
+            <div>
+              <LogoSosmed srcImg="/terabox.webp">Terabox</LogoSosmed>
+              <Btn className=" bg-sky-600  ring-sky-800">Segera hadir</Btn>
+            </div>
           </section>
           {/* End Pilih sosmed  */}
         </div>
