@@ -8,6 +8,7 @@ import { Tutorial } from "../components/Tutorial";
 import { Decription } from "../components/Decription";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { LoadingButton } from "../components/Loading";
 
 export default function TikTok() {
   const [link, setLink] = useState(null);
@@ -49,7 +50,7 @@ export default function TikTok() {
             required
           />
           <Btn className="bg-emerald-600 ring-emerald-500">
-            {loading ? "Loading..." : "Download"}
+            {loading ? <LoadingButton /> : "Download"}
           </Btn>
         </form>
 
