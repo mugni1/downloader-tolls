@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "inconsolata";
+  src: url("/src/assets/Inconsolata-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "inconsolata", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
