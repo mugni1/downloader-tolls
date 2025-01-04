@@ -20,3 +20,5 @@ export default function DarkModeProvider({ children }) {
     </DarkModeContext.Provider>
   );
 }
+
+export { DarkModeContext };
