@@ -2,10 +2,11 @@ import PropTypes from "prop-types";
 
 Container.propTypes = {
   children: PropTypes.any,
+  className: PropTypes.string,
 };
-export function Container({ children }) {
+export function Container({ children, className }) {
   return (
-    <section className="wfull min-h-screen flex items-center justify-center">
+    <section className={`wfull min-h-screen flex items-center justify-center ${className}`}>
       {children}
     </section>
   );

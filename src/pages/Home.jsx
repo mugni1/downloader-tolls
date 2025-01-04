@@ -4,15 +4,36 @@ import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 import { Title } from "../components/Title";
 import { LogoSosmed } from "../components/LogoAndNameSosmed";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/DarkMode";
 
-// tolls untuk donwnload video youtube, tiktok, intagram
 export default function Home() {
+  // use context
+  const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
   return (
     <>
-      <Container>
+      <div
+        className={`w-full py-3  px-5 container mx-auto transition-all duration-700 ${
+          isDarkMode ? "bg-slate-200" : "bg-slate-600"
+        }`}
+      >
+        <button
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          className={`px-5 py-1 ${
+            isDarkMode ? "bg-slate-800 text-white" : "bg-white"
+          } rounded-md font-semibold`}
+        >
+          {isDarkMode ? "Dark" : "Light"}
+        </button>
+      </div>
+      <Container
+        className={`${
+          isDarkMode ? "text-white bg-slate-800" : "text-slate-800 bg-white"
+        } transition-all duration-700`}
+      >
         <div className=" w-full px-5">
-          <Title className="text-slate-800">Selamat Datang</Title>
-          <p className="text-center text-slate-800">
+          <Title>Selamat Datang</Title>
+          <p className="text-center">
             Kami menawarkan layanan gratis untuk <b>UNDUH</b> video atau sound
             <b> YouTube,</b> <b>TikTok,</b> <b>Instagram</b> dan <b>Twitter</b>{" "}
             tanpa <b>watermark</b>. Dapatkan video dengan resolusi HD dalam
