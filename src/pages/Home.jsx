@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div>
               <LogoSosmed srcImg="/terabox.webp">Terabox</LogoSosmed>
-              <Btn className=" bg-sky-600  ring-sky-800">Segera hadir</Btn>
+              <Btn className=" bg-sky-600  ring-sky-800">Coming Soon</Btn>
             </div>
           </section>
           {/* End Pilih sosmed  */}
