@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <>
       <div
-        className={`w-full py-3 fixed px-5 container mx-auto transition-all duration-700 ${
-          isDarkMode ? "bg-slate-200" : "bg-slate-600"
+        className={`w-full py-3 fixed px-5 container mx-auto transition-all duration-700 shadow-md ${
+          isDarkMode ? "bg-slate-600" : "bg-white"
         }`}
       >
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
           className={`px-5 py-1 ${
-            isDarkMode ? "bg-slate-800 text-white" : "bg-white"
+            isDarkMode ? "bg-white text-slate-600" : "bg-slate-600 text-white"
           } rounded-md font-semibold`}
         >
-          {isDarkMode ? "Dark" : "Light"}
+          {isDarkMode ? "Light" : "Dark"}
         </button>
       </div>
       <Container
