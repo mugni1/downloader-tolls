@@ -19,7 +19,7 @@ export default function Home() {
       >
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
-          className={`px-5 py-1 ${
+          className={`px-5 py-1 transition-all duration-700 ${
             isDarkMode ? "bg-white text-slate-600" : "bg-slate-600 text-white"
           } rounded-md font-semibold`}
         >
