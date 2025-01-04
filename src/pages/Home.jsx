@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`w-full py-3  px-5 container mx-auto transition-all duration-700 ${
+        className={`w-full py-3 fixed px-5 container mx-auto transition-all duration-700 ${
           isDarkMode ? "bg-slate-200" : "bg-slate-600"
         }`}
       >
